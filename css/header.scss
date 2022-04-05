@@ -1,0 +1,81 @@
+@import "./var.scss";
+.header {
+  background: $gradient1;
+  .links {
+    display: flex;
+    .links__item {
+      padding-top: 26px;
+      font-size: 14px;
+      color: $color1;
+    }
+    .links__item_img-num {
+      padding-right: 8px;
+      padding-top: 31px;
+    }
+    .links__item_phone1 {
+      font-size: 15px;
+      flex-grow: 0.05;
+      padding-top: 31px;
+    }
+    .links__item_phone2 {
+      font-size: 15px;
+      padding-top: 31px;
+      flex-grow: 0.5;
+    }
+    .links__item_location {
+      padding-top: 31px;
+      flex-grow: 1;
+    }
+    .links__item_img-loc {
+      padding-right: 8px;
+      padding-bottom: 26px;
+    }
+    .links__item_img-inst {
+      padding-right: 15px;
+    }
+    .links__item_two-strings {
+      line-height: 14px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .links__item_phone1,
+  .links__item_phone2,
+  .links__item_img-num {
+    display: none;
+  }
+  .links__item_img-loc {
+    padding-left: 45%;
+  }
+}
+@media (max-width: 502px) {
+  .links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links__item_phone1,
+  .links__item_phone2 {
+    display: block;
+  }
+  .links__item_phone2 {
+    padding-top: 2px !important;
+    padding-bottom: 26px;
+    &::after {
+      content: "ваш город";
+      display: flex;
+      justify-content: center;
+      font-size: 17px;
+      line-height: 16px;
+      font-weight: 300;
+      padding-top: 8px;
+    }
+  }
+  .links__item_img-loc,
+  .links__item_location,
+  .links__item_two-strings,
+  .links__item_img-inst {
+    display: none;
+  }
+}

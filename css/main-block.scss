@@ -1,0 +1,119 @@
+@import "./var.scss";
+.main-block {
+  margin-top: 47px;
+  padding-bottom: 50px;
+  background-image: url("./img/background1.svg"), url("./img/group_top.svg"),
+    url("./img/group_bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 15% top 141px, left 31% top 220px,
+    left 9% bottom 67px;
+  background-size: 50% auto, 4% auto, 7% auto;
+  .menu {
+    display: flex;
+    .menu__item {
+      font-weight: 300;
+      font-size: 18px;
+      color: $color3;
+    }
+    .menu__item_logo {
+      flex-grow: 0.02;
+    }
+    .menu__item_logoname {
+      font-style: italic;
+      font-weight: 900;
+      font-size: 36px;
+      padding-top: 7px;
+      flex-grow: 1;
+      color: $color2;
+    }
+    .menu__item_top {
+      padding-top: 8px;
+      padding-left: 25px;
+      a {
+        color: $color2;
+      }
+    }
+  }
+  .content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .content__title {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 59px;
+    }
+    .content__note {
+      font-weight: 300;
+      font-size: 24px;
+      padding-top: 10px;
+      line-height: 28px;
+    }
+    .content__button {
+      font-weight: 900;
+      font-size: 20px;
+      text-align: center;
+      color: $color1;
+      border-radius: 7px;
+      background: $gradient2;
+      margin-top: 20px;
+      padding: 16px 32px;
+      &:hover {
+        background: $gradient1;
+      }
+    }
+  }
+}
+.carpet {
+  padding-left: 50px;
+}
+@media (min-width: 1851px) {
+  .main-block {
+    background-size: 35% auto, 4% auto, 7% auto;
+  }
+}
+
+@media (max-width: 985px) {
+  .carpet {
+    padding-left: 0px;
+    width: 40%;
+  }
+}
+@media (max-width: 769px) {
+  .menu__item_top {
+    display: none;
+  }
+}
+@media (max-width: 648px) {
+  .content__title {
+    font-size: 40px !important;
+    line-height: 40px !important;
+    padding-top: 30px;
+  }
+  .carpet {
+    display: none;
+  }
+  .content {
+    text-align: center;
+  }
+}
+@media (max-width: 502px) {
+  .main-block {
+    background-size: 65% auto, 4% auto, 7% auto;
+    background-position: right center, left 31% top 220px,
+    left 9% bottom 67px;
+  }
+  .content__title {
+    font-size: 25px !important;
+    line-height: 25px !important;
+  }
+  .content__button {
+    font-size: 15px !important;
+  }
+  .menu__item_logo, .menu__item_logoname {
+    flex-grow: 0 !important;
+  }
+  .menu {
+    justify-content: center;
+  }
+}
