@@ -136,7 +136,7 @@ body {
 .main-block {
   margin-top: 47px;
   padding-bottom: 50px;
-  background-image: url("./img/background1.svg"), url("./img/group_top.svg"), url("./img/group_bottom.svg");
+  background-image: url("../img/background1.svg"), url("../img/group_top.svg"), url("../img/group_bottom.svg");
   background-repeat: no-repeat;
   background-position: right 15% top 141px, left 31% top 220px, left 9% bottom 67px;
   background-size: 50% auto, 4% auto, 7% auto;
@@ -256,7 +256,7 @@ body {
   }
 }
 .about-block {
-  background-image: url("./img/background3.svg");
+  background-image: url("../img/background3.svg");
   background-repeat: no-repeat;
   background-position: left bottom 25%;
 }
@@ -331,7 +331,7 @@ body {
 }
 @media (max-width: 769px) {
   .about-block {
-    background-image: url("./img/left-top.svg"), url("./img/right-bottom.svg");
+    background-image: url("../img/left-top.svg"), url("../img/right-bottom.svg");
     background-position: left top 300px, right bottom 120px;
   }
 
@@ -456,7 +456,7 @@ hr {
 .contacts {
   padding-top: 172px;
   padding-bottom: 68px;
-  background: url("./img/footer1.svg") no-repeat, url("./img/footer2.svg") no-repeat;
+  background: url("../img/footer1.svg") no-repeat, url("../img/footer2.svg") no-repeat;
   background-position: left 69px top 82px, right 122px top 19px;
 }
 .contacts .col {
