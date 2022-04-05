@@ -1,6 +1,6 @@
 @import "./var.scss";
 .about-block {
-  background-image: url(../img/background3.svg);
+  background-image: url("../img/background3.svg");
   background-repeat: no-repeat;
   background-position: left bottom 25%;
 }
@@ -73,7 +73,7 @@
 }
 @media (max-width: 769px) {
   .about-block {
-    background-image: url(../img/left-top.svg), url(../img/right-bottom.svg);
+    background-image: url("../img/left-top.svg"), url("../img/right-bottom.svg");
     background-position: left top 300px, right bottom 120px;
   }
   .about-block__title {
